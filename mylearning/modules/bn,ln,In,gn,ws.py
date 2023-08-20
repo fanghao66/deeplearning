@@ -51,6 +51,12 @@ class GN2d(nn.Module):
         pass
     def forward(self,x):
         pass
+class SN2d(nn.Module):
+    def __init__(self) -> None:
+        super(SN2d,self).__init__()
+        pass
+    def forward(self):
+        pass
 #不是实现ws操作，而是实现参数标准化的卷积操作
 class WSCond2d(nn.Conv2d):
     def __init__(self, in_channels: int, out_channels: int, kernel_size: _size_2_t, 
